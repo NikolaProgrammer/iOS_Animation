@@ -17,6 +17,7 @@
 		911F705420FC7D640023FF5D /* CarRacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F705320FC7D640023FF5D /* CarRacingView.swift */; };
 		911F705620FC95E20023FF5D /* JalousieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F705520FC95E20023FF5D /* JalousieView.swift */; };
 		911F705820FC96C20023FF5D /* JalousieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F705720FC96C20023FF5D /* JalousieViewController.swift */; };
+		91AF858920FF3A4C002FA7A7 /* Double+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AF858820FF3A4C002FA7A7 /* Double+random.swift */; };
 		91F9F61E20FE10060051A8D8 /* CubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9F61D20FE10060051A8D8 /* CubeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		911F705320FC7D640023FF5D /* CarRacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRacingView.swift; sourceTree = "<group>"; };
 		911F705520FC95E20023FF5D /* JalousieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JalousieView.swift; sourceTree = "<group>"; };
 		911F705720FC96C20023FF5D /* JalousieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JalousieViewController.swift; sourceTree = "<group>"; };
+		91AF858820FF3A4C002FA7A7 /* Double+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+random.swift"; sourceTree = "<group>"; };
 		91F9F61D20FE10060051A8D8 /* CubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				911F703B20F8D31A0023FF5D /* AppDelegate.swift */,
+				91AF858620FF38E3002FA7A7 /* Extensions */,
 				91F9F61F20FE25B20051A8D8 /* Controllers */,
 				91F9F62020FE25C10051A8D8 /* Custom View */,
 				911F703F20F8D31A0023FF5D /* Main.storyboard */,
@@ -75,6 +78,14 @@
 				911F704720F8D3200023FF5D /* Info.plist */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		91AF858620FF38E3002FA7A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				91AF858820FF3A4C002FA7A7 /* Double+random.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		91F9F61F20FE25B20051A8D8 /* Controllers */ = {
@@ -177,6 +188,7 @@
 				911F705820FC96C20023FF5D /* JalousieViewController.swift in Sources */,
 				911F705620FC95E20023FF5D /* JalousieView.swift in Sources */,
 				911F704E20F8D9100023FF5D /* PlanetView.swift in Sources */,
+				91AF858920FF3A4C002FA7A7 /* Double+random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

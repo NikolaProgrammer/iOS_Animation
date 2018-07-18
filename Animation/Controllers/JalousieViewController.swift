@@ -15,7 +15,7 @@ class JalousieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Change image", style: .plain, target: contentView, action: #selector(JalousieView.flipImageButtonTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Change image", style: .plain, target: contentView, action: #selector(JalousieView.squareChangeButtonTapped))
     }
 
 }
