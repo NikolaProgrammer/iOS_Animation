@@ -59,7 +59,5 @@ class ScaleView: UIView {
             })
         }
     }
-    
-    
-    
+   
 }

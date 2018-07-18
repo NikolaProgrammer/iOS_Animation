@@ -70,13 +70,3 @@ class CubeViewController: UIViewController {
        
     }
 }
-
-
-
-
-
-
-
-
-
-
