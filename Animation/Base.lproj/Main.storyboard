@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oQL-YP-B9o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="enJ-wm-beJ">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,13 +18,268 @@
                     <view key="view" contentMode="scaleToFill" id="NVS-wf-v2N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Elh-Ff-Tgu">
+                                <rect key="frame" x="62" y="263" width="250" height="340"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oni-ck-Wrv">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="2ei-dt-97y"/>
+                                            <constraint firstAttribute="height" constant="50" id="rmx-Xk-MIj"/>
+                                        </constraints>
+                                        <state key="normal" title="Cube"/>
+                                        <connections>
+                                            <segue destination="0Y7-fe-wBc" kind="show" id="U6R-NB-tnZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="did-If-MyH">
+                                        <rect key="frame" x="0.0" y="58" width="250" height="50"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uHt-4Q-vKk"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="xpH-8t-8Pe"/>
+                                        </constraints>
+                                        <state key="normal" title="Planet"/>
+                                        <connections>
+                                            <segue destination="bTV-9r-y3o" kind="show" id="Cny-bv-Yv4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kY-Zh-ycq">
+                                        <rect key="frame" x="0.0" y="116" width="250" height="50"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bcY-jS-PDz"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="kZJ-Yk-T1D"/>
+                                        </constraints>
+                                        <state key="normal" title="Scale"/>
+                                        <connections>
+                                            <segue destination="adI-qK-RNT" kind="show" id="4LS-um-C5Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYG-74-TUS">
+                                        <rect key="frame" x="0.0" y="174" width="250" height="50"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="00t-es-Dp9"/>
+                                            <constraint firstAttribute="height" constant="50" id="JuS-7C-pWT"/>
+                                        </constraints>
+                                        <state key="normal" title="Ticker"/>
+                                        <connections>
+                                            <segue destination="KhV-cf-RqO" kind="show" id="KXW-z2-pMB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bch-Ef-zf9">
+                                        <rect key="frame" x="0.0" y="232" width="250" height="50"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jzl-QC-6xJ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="xsc-Sa-qiE"/>
+                                        </constraints>
+                                        <state key="normal" title="Image change"/>
+                                        <connections>
+                                            <segue destination="X2S-M4-Gho" kind="show" id="0j7-sU-Czf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofK-eD-Ol8">
+                                        <rect key="frame" x="0.0" y="290" width="250" height="50"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Bk9-1h-Emt"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="XIw-VK-BwL"/>
+                                        </constraints>
+                                        <state key="normal" title="Car Racing"/>
+                                        <connections>
+                                            <segue destination="k2J-nH-EdV" kind="show" id="JME-s0-vaa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Elh-Ff-Tgu" firstAttribute="centerY" secondItem="XQF-Is-nVe" secondAttribute="centerY" id="5Xo-II-oH1"/>
+                            <constraint firstItem="Elh-Ff-Tgu" firstAttribute="centerX" secondItem="XQF-Is-nVe" secondAttribute="centerX" id="H5M-wX-7pu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XQF-Is-nVe"/>
                     </view>
+                    <navigationItem key="navigationItem" id="TVp-AR-7Cd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDv-mv-1wQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="319"/>
+            <point key="canvasLocation" x="465" y="318"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Uvi-R0-bjI">
+            <objects>
+                <viewController id="adI-qK-RNT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e6m-ct-hKb" customClass="ScaleView" customModule="Animation" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rMV-1S-Lia">
+                                <rect key="frame" x="62" y="138" width="250" height="108"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC3-o3-UbT">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="73z-cJ-zRO"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Aoe-f3-skB"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Scale"/>
+                                        <connections>
+                                            <action selector="scaleButtonTapped:" destination="e6m-ct-hKb" eventType="touchUpInside" id="8kq-Ti-D41"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEJ-Ou-Z4I">
+                                        <rect key="frame" x="0.0" y="58" width="250" height="50"/>
+                                        <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="FyC-dc-gNZ"/>
+                                            <constraint firstAttribute="height" constant="50" id="slp-ZZ-mSn"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Move To Trash"/>
+                                        <connections>
+                                            <action selector="moveToTrashButtonTapped:" destination="e6m-ct-hKb" eventType="touchUpInside" id="h2k-ve-U47"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rMV-1S-Lia" firstAttribute="top" secondItem="uvj-w3-zGm" secondAttribute="top" constant="50" id="752-C3-xtC"/>
+                            <constraint firstItem="rMV-1S-Lia" firstAttribute="centerX" secondItem="uvj-w3-zGm" secondAttribute="centerX" id="Yka-NN-WGR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uvj-w3-zGm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TpJ-tv-5UZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-273" y="1063"/>
+        </scene>
+        <!--Jalousie View Controller-->
+        <scene sceneID="bjL-F8-6MB">
+            <objects>
+                <viewController id="X2S-M4-Gho" customClass="JalousieViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3gl-0F-cWL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48G-r9-YPM" customClass="JalousieView" customModule="Animation" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="48G-r9-YPM" firstAttribute="bottom" secondItem="LVI-Cv-5eo" secondAttribute="bottom" id="BfT-Xh-Y1r"/>
+                            <constraint firstItem="48G-r9-YPM" firstAttribute="leading" secondItem="LVI-Cv-5eo" secondAttribute="leading" id="G1P-fO-ARH"/>
+                            <constraint firstItem="48G-r9-YPM" firstAttribute="top" secondItem="LVI-Cv-5eo" secondAttribute="top" id="P4l-qO-N1X"/>
+                            <constraint firstItem="48G-r9-YPM" firstAttribute="trailing" secondItem="LVI-Cv-5eo" secondAttribute="trailing" id="lAU-rw-ASo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LVI-Cv-5eo"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="48G-r9-YPM" id="Yo6-vA-8hU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sid-6b-Roi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464.80000000000001" y="1062.5615763546798"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eGD-nC-OKS">
+            <objects>
+                <viewController id="k2J-nH-EdV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HWt-1f-BJX" customClass="CarRacingView" customModule="Animation" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ld7-fs-BDw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cd7-Jc-GJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="1063"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YFo-b2-5FD">
+            <objects>
+                <viewController id="bTV-9r-y3o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RJm-hw-T8a" customClass="PlanetView" customModule="Animation" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vRp-tR-TeQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fU-12-q1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2161" y="692"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BRR-86-mDK">
+            <objects>
+                <viewController id="KhV-cf-RqO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4h0-l9-GDV" customClass="TickerView" customModule="Animation" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bjc-3v-SCG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oS7-rk-tBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2926" y="318"/>
+        </scene>
+        <!--Cube View Controller-->
+        <scene sceneID="VPy-5B-uHV">
+            <objects>
+                <viewController id="0Y7-fe-wBc" customClass="CubeViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3nB-J6-r81">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="r9X-71-tH8"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zk8-gq-mcJ" appends="YES" id="e0u-ng-7QE"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wai-Wy-Fqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="zk8-gq-mcJ">
+                    <connections>
+                        <action selector="rotateCube:" destination="0Y7-fe-wBc" id="TDX-rn-Qps"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2161" y="-50"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kx7-Qk-fvQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="enJ-wm-beJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iIR-j0-uX1">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oQL-YP-B9o" kind="relationship" relationship="rootViewController" id="hZ2-hX-tYa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tr2-ey-7ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-478" y="318"/>
         </scene>
     </scenes>
 </document>
